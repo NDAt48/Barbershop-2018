@@ -9,15 +9,15 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <nav class="main-menu">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li class="site-navigation-current">Магазин</li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -35,7 +35,7 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li class="breadcrumbs-current">Средства для ухода</li>
       </ul>
-
+    <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -190,26 +190,29 @@
           <li class="pagination-item"><a href="#">4</a></li>
         </ul>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <div class="container">
+        <p class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="map.html">Как проехать</a><br>
+          <a href="map.html">Как проехать</a><br>
         Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="footer-social">
-        <b>Давайте дружить!</b>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
+        </p>
+        <div class="footer-social">
+          <b>Давайте дружить!</b>
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Разработано:</b>
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <b>Разработано:</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
     </footer>
 
     <section class="modal modal-login">

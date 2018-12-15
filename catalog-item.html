@@ -8,16 +8,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <nav class="main-menu">
+   <header class="main-header">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -37,7 +37,7 @@
         <li><a href="#">Средства для ухода</a></li>
         <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
       </ul>
-      
+    <div class="catalog-columns">
       <section class="product-photos">
         <h2 class="visually-hidden">Изображение товара</h2>
         <p class="product-full">
@@ -70,26 +70,29 @@
           <li>Удобная кожаная косметичка</li>
         </ul>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <div class="container">
+        <p class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="map.html">Как проехать</a><br>
+          <a href="map.html">Как проехать</a><br>
         Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="footer-social">
-        <b>Давайте дружить!</b>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
+        </p>
+        <div class="footer-social">
+          <b>Давайте дружить!</b>
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Разработано:</b>
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <b>Разработано:</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
     </footer>
 
     <section class="modal modal-login">
