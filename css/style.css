@@ -65,6 +65,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #000000;
   border: none;
+  cursor: pointer;
+  transition-duration: 200ms;
 }
 
 .button.disabled,
@@ -163,6 +165,8 @@ input[type="radio"].visually-hidden {
   padding: 25px 20px;
 
   color: #ffffff;
+  transition-duration: 200ms;
+  transition-property: background-color;
 }
 
 .site-navigation a:hover,
@@ -629,6 +633,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  transition-property: box-shadow;
+  transition-duration: 200ms;
 }
 
 .catalog-item:nth-child(3n) {
@@ -721,6 +728,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: #000000;
+
+  transition-duration: 200ms;
+  transition-property: background-color;
 }
 
 .pagination-item a:hover,
@@ -1065,6 +1075,8 @@ input[type="radio"].visually-hidden {
   height: 43px;
 
   background-color: #000000;
+
+  transition: 200ms;
 }
 
 .social-button:hover,
@@ -1098,6 +1110,46 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+  transform: translateX(10px);
+  }
 }
 
 .modal {
@@ -1308,6 +1360,31 @@ input[type="radio"].visually-hidden {
   border: 7px solid white;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .modal-map p {
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+.overlay-show {
+  display: block;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
